@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(moda.jpg);
+        background-repeat: no-repeat ;
+        background-size: 100%;
+        height: 100%;
+        
+    }
+    #casa{
+       background-size: cover;
+       height: 80px;
+       background-image: url(istockphoto-1361472307-612x612.jpg);
+       background-repeat: no-repeat;
+       color: #080707
+       
+    }
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+[data-component='sidebar'] {
+  .sidebar {
+    position: fixed;
+    z-index: 9999;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .first-menu {
+    position: fixed;
+    background-image: url(istockphoto-1361472307-612x612.jpg);
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 83px;
+    top: 0px;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    .list-group-item {
+      border-right: 0;
+      &:not(last-child) {
+        border-bottom: 0;
+      }
+      &:hover {
+        background-color: #ee4444;
+      }
+    }
+    a {
+      white-space: nowrap;
+      color: #e6dfdf;
+      font-weight: 400;
+      font-size: em(14);
+      span {
+        opacity: 0;
+        visibility: hidden;
+    }
+    }
+    &:hover span {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .first-menu:hover {
+    width: 300px;
+  }
+  
+  .submenu {
+    position: fixed;
+    left: 300px;
+    width: 300px;
+    top: 0px;
+    background-color: #bb1515;
+    height: 100vw;
+    opacity: 0;
+    max-width: 0;
+    overflow: auto;
+    animation-name: slideOut;
+    -webkit-transition-duration: opacity 0.3s;
+    -moz-transition-duration: opacity 0.3s;
+    -o-transition-duration: opacity 0.3s;
+    transition-duration: opacity 0.3s;
+    .list-group-item {
+      background-color: #6bace6;
+      border-left: 0;
+      &:hover {
+        background-color: #4a8cdd;
+      }
+    }
+    a {
+      color: #080707;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    span {
+      font-weight: 400;
+    font-size: 11px;
+    color: #0e0e0b;
+    display: block; 
+    }
+    
+  }
+  .svg-submenu {
+    background-color: #009eff;
+    .list-group-item {
+      background-color: #009eff;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      &:hover {
+        background-color: #0075BA;
+      }
+    }
+    a {
+      line-height: normal;
+    }
+  }
+  .first-menu li:hover .submenu {
+    max-width: 10%;
+    opacity: 1;
+  }
+}
+    
+
+</style>
+<body>
+    <div class="simple-admin">
+        <div data-component="sidebar">
+          <div class="sidebar">
+            <ul class="list-group flex-column d-inline-block first-menu">
+              <li class="list-group-item py-2">
+                <a href="#">
+                  <img src="456212.png" height="40" class="mr-4"><span>Reporting</span>
+                </a>
+                <ul class="list-group flex-column d-inline-block submenu svg-submenu">
+                  <li class="list-group-item">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495403294/Dashboard_kcz278.svg" height="32" width="40" class="ml-2 mr-4 d-inline-block">
+                      <div class="text d-inline-block align-middle">
+                        Dashboard
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                      <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495403862/Yoast_SEO_m04eam.svg" height="33" width="40" class="ml-2 mr-4 d-inline-block">
+                      <div class="text d-inline-block align-middle">
+                        Yoast SEO
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li> <!-- /.list-group-item -->
+              
+              <li class="list-group-item py-2">
+                <a href="#">
+                  <img src="b26ee4099ae2550f79e65e41843a9198-sinal-de-casa-em-casa-plana.webp" height="40"class="mr-4"><span>General Content</span>
+                </a>
+               
+                <ul class="list-group flex-column d-inline-block submenu svg-submenu">
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495404616/Pages_axm9as.svg" height="32" width="40" class="ml-2 mr-4 d-inline-block">
+                      <div class="text d-inline-block align-middle">
+                Pages
+              </div>
+                </a>
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495404684/Posts_z9gahq.svg" height="33" width="40"  class="ml-2 mr-4 d-inline-block text-center">
+                      <div class="text d-inline-block align-middle">
+                Posts
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495404748/Blog_Assist_uo3f89.svg" height="32" width="40"  class="ml-2 mr-4 d-inline-block text-center">
+                      <div class="text d-inline-block align-middle">
+                Blog Assist
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495404814/Testimonials_g1e2l1.svg" height="32" width="40" class="ml-2 mr-4 d-inline-block text-center">
+                      <div class="text d-inline-block align-middle">
+                Testimonials
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495404872/Team_Members_ttaqh0.svg" height="33" width="40" class="ml-2 mr-4 d-inline-block text-center">
+                      <div class="text d-inline-block align-middle">
+                Team Members
+              </div>
+                </a>
+                  </li>
+                </ul>
+              </li> <!-- /.list-group-item -->
+              
+              <li class="list-group-item py-2">
+                <a href="#">
+                  <img src="png-transparent-telephone-icon-icon-phone-pic-electronics-image-file-formats-text-thumbnail.png" height="40" class="mr-4"><span>AgentFire Arsenal</span>
+                </a>
+                <ul class="list-group flex-column d-inline-block submenu">
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495399917/REV_CTA_v0hi6i.png" height="46" class="ml-2 mr-3 d-inline-block align-middle">
+                      <div class="text d-inline-block align-middle">
+                REV CTA  
+                <span>Next Gen Call to Action</span>
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495402287/Lead_Pages_cowona.png" height="46" class="ml-2 mr-3 d-inline-block align-middle">
+                      <div class="text d-inline-block align-middle">
+                Lead Pages  
+                <span>Instant Landing Page</span>
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495402402/Hyper_Local_ym0uox.png" height="47" class="ml-2 mr-3 d-inline-block align-middle">
+                      <div class="text d-inline-block align-middle">
+                Hyper-Local  
+                <span>Area Content Pages on Steroids</span>
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495402554/Listing_Showcase_xg4y6w.png" height="45" class="ml-2 mr-3 d-inline-block align-middle">
+                      <div class="text d-inline-block align-middle">
+                Listing Showcase 
+                <span>Create & Manage Your Listings</span>
+              </div>
+                </a>
+                  </li>
+                  
+                  <li class="list-group-item">
+                    <a href="#">
+                  <img src="https://res.cloudinary.com/dt9b7pad3/image/upload/v1495402635/Home_Values_c003ks.png" height="46" class="ml-2 mr-3 d-inline-block align-middle">
+                      <div class="text d-inline-block align-middle">
+            </ul>
+          </div> <!-- /.sidebar -->
+        </div>
+      </div> <!-- /.simple-admin -->
+    
+    <div id="casa" >
+        <center>
+        <h1>casa</h1>
+        </center>
+    </div>
+  
+</body>
+</html>
